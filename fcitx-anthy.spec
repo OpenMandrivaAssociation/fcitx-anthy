@@ -27,6 +27,7 @@ Group: System/Internationalization
 BuildRequires: cmake
 BuildRequires: pkgconfig(fcitx)
 BuildRequires: pkgconfig(anthy)
+BuildRequires: intltool
 
 %track
 prog %{name} = {
