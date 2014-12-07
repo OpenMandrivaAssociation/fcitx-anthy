@@ -5,7 +5,7 @@ Name: fcitx-anthy
 Version: 0.1.1
 %if "%{beta}" == ""
 %if "%{scmrev}" == ""
-Release: 7
+Release: 8
 Source0: http://fcitx.googlecode.com/files/%{name}-%{version}.tar.xz
 %else
 Release: 0.%{scmrev}.1
