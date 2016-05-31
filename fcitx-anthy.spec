@@ -25,7 +25,7 @@ Anthy (Japanese IM) plugin for fcitx.
 %setup -q
 
 %build
-%cmake_qt5
+%cmake
 %make
 
 %install
