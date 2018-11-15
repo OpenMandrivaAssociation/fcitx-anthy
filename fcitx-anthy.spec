@@ -11,13 +11,6 @@ BuildRequires: pkgconfig(fcitx)
 BuildRequires: pkgconfig(anthy)
 BuildRequires: intltool
 
-%track
-prog %{name} = {
-	url = http://code.google.com/p/fcitx/downloads/list
-	regex = %name-(__VER__)\.tar\.xz
-	version = %{version}
-}
-
 %description
 Anthy (Japanese IM) plugin for fcitx.
 
