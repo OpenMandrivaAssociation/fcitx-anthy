@@ -1,7 +1,7 @@
 Summary: Anthy (Japanese IM) plugin for fcitx
 Name: fcitx-anthy
 Version: 0.2.2
-Release: 2
+Release: 3
 Source0: http://fcitx.googlecode.com/files/%{name}-%{version}.tar.xz
 URL: http://fcitx.googlecode.com/
 License: GPLv2
