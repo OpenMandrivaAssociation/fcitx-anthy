@@ -1,8 +1,8 @@
 Summary: Anthy (Japanese IM) plugin for fcitx
 Name: fcitx-anthy
-Version: 0.2.2
-Release: 3
-Source0: http://fcitx.googlecode.com/files/%{name}-%{version}.tar.xz
+Version: 0.2.4
+Release: 1
+Source0: https://github.com/fcitx/fcitx-anthy/archive/refs/tags/%{version}.tar.gz
 URL: http://fcitx.googlecode.com/
 License: GPLv2
 Group: System/Internationalization
@@ -10,19 +10,21 @@ BuildRequires: cmake
 BuildRequires: pkgconfig(fcitx)
 BuildRequires: pkgconfig(anthy)
 BuildRequires: intltool
+# https://github.com/OpenMandrivaAssociation/distribution/issues/2918
+Requires: locales-extra-charsets
 
 %description
 Anthy (Japanese IM) plugin for fcitx.
 
 %prep
-%setup -q
+%autosetup -p1
+%cmake -G Ninja
 
 %build
-%cmake
-%make
+%ninja_build -C build
 
 %install
-%makeinstall_std -C build
+%ninja_install -C build
 %find_lang %name
 
 %files -f %name.lang
