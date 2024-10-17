@@ -3,7 +3,7 @@ Name: fcitx-anthy
 Version: 0.2.4
 Release: 1
 Source0: https://github.com/fcitx/fcitx-anthy/archive/refs/tags/%{version}.tar.gz
-URL: http://fcitx.googlecode.com/
+URL: https://fcitx.googlecode.com/
 License: GPLv2
 Group: System/Internationalization
 BuildRequires: cmake
